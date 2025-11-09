@@ -1,7 +1,7 @@
 # config.py
-API_TOKEN = "8350655043:AAFYs4qiA4Do9CU3iBOOHPuo3eUpBCrS2b4"   # ← вставь токен от BotFather
+API_TOKEN = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"   # ← вставь токен от BotFather
 
-# Путь до JSON с рецептами (автоимпорт при старте)
+# Путь до JSON с рецептами 
 RECIPES_JSON_PATH = "recipes.json"
 
 # Целевые калории для плана
