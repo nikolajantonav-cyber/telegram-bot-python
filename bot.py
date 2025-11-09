@@ -10,9 +10,9 @@ from config import API_TOKEN
 from handlers import register_handlers
 from helpers import load_recipes_from_json
 
-# ======================================================
-# 🧠 Логирование
-# ======================================================
+
+#  Логирование
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
@@ -20,7 +20,7 @@ logging.basicConfig(
 logger = logging.getLogger("cooking-bot")
 
 
-# 🗃️ Инициализация базы
+#  Инициализация базы
 
 db.init_db()
 
@@ -29,7 +29,7 @@ if added:
     logger.info(f"Добавлено рецептов из JSON: {added}")
 
 
-# 🤖 Инициализация бота
+#  Инициализация бота
 bot = Bot(API_TOKEN, parse_mode="HTML")
 dp = Dispatcher(bot, storage=MemoryStorage())
 
